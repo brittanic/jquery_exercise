@@ -1,0 +1,60 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*{
+  box-sizing: inherit;
+}
+body {
+    background: #fff; /* must change */
+    color: #000; /* may be #000 or #fff */
+    font-family: 'Cardo', 'Times New Roman', serif;
+    margin: 1rem;
+}
+
+.container {
+    padding: 20px; /* keep */
+    margin: auto; /* keep */
+    border: 1px solid; /* can delete or change */
+    background-color: #fff;
+    max-width: 800px;
+    /* display: flex;
+    align-items: center; */
+}
+
+.column {
+  display: flex;
+}
+
+h1 {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+}
+
+p {
+
+}
+
+img {
+  padding: 1rem;
+  margin: 0;
+}
+
+
+
+@media screen and (max-width: 500px){
+  .container {
+      width: 100%;
+}
+.column {
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 auto;
+}
+img {
+  padding: 0.5;
+}
+p {
+  padding: auto;
+}
+}
